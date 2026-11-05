@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ovo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ovo&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-white: #ffffff;
+  --backgroud-button-color: #57744b;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+  font-family: "Ovo", serif;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: #fff0cb;
+  border-bottom: 9px double #b55232;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  flex-flow: row wrap;
+  color: #57744b;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #57744b;
+}
+
+.button {
+  background-color: var(--backgroud-button-color);
+  display: inline-block;
+  border-radius: 10px;
+  color: var(--primary-white);
+  text-decoration: none;
+  padding: 0.5rem;
+  align-items: flex-start;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.logo {
+  max-width: 350px;
+}
+
+footer {
+  border-top: 9px double #f4961a;
+  background-color: var(--backgroud-button-color);
+  padding: 2rem 0;
+  margin-top: 1rem;
+  color: var(--primary-white);
+}
+
+.season {
+  padding: 10px;
+}
+
+.body2 {
+  padding: 20px;
+}
+
+.season-grid {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .season-grid {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .season-card {
+    width: 31.5%;
+    text-align: left;
+  }
+}
